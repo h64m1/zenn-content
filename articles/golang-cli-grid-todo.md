@@ -114,7 +114,7 @@ yamlファイルを作成する処理は以下の通りで、空の`Todo`を作�
 	Run: func(cmd *cobra.Command, args []string) {
 		var yamlFile string
 		if len(args) == 0 {
-			yamlFile = "todo.yaml"
+			yamlFile = "todo.yml"
 		} else {
 			yamlFile = args[0]
 		}
@@ -140,7 +140,7 @@ yamlファイルを作成する処理は以下の通りで、空の`Todo`を作�
 ```
 $ go install
 $ gridtodo generate
-$ cat todo.yaml
+$ cat todo.yml
 goal: ""
 panel:
 - cell:
