@@ -3,7 +3,7 @@ title: "goでcli作成: マンダラートをmarkdownテーブルで表示、yam
 emoji: "📘"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["go", "cli"]
-published: false
+published: true
 ---
 
 マンダラートを使ってアイデア出しをするときに、出したアイデアをテキストファイルで管理したいなーと思い、yamlファイルで作った内容をmarkdownテーブル表示のマンダラートに変換するcliをgoで作りました。
@@ -331,7 +331,7 @@ $ gridtodo show test.yml
 |🐶|犬|🐶|🐱|猫|🐱|⭐|星|⭐|
 |🐶|🐶|🐶|🐱|🐱|🐱|⭐|⭐|⭐|
 |🎵|🎵|🎵|犬|猫|星|🚗|🚗|🚗|
-|🎵|音|🎵|音|😃<br>😃|車|🚗|顔|🚗|
+|🎵|音|🎵|音|😃<br>😃|車|🚗|車|🚗|
 |🎵|🎵|🎵|走|球|青|🚗|🚗|🚗|
 |🏃|🏃|🏃|⚽|⚽|⚽|🔵|🔵|🔵|
 |🏃|走|🏃|⚽|球|⚽|🔵|青|🔵|
@@ -341,7 +341,7 @@ $ gridtodo show test.yml
 
 上記のtableをmarkdownのファイルにコピペして、vscodeのmarkdownプレビューの拡張機能を使って表示すると以下の画像のようになります。
 
-![](https://storage.googleapis.com/zenn-user-upload/3ky52rh1atp1i7vq6m5spovml5ty)
+![](https://storage.googleapis.com/zenn-user-upload/nkn2xldkia1opfuvtkaievcrqagk)
 
 入力用に用意したyamlファイルは下記。
 ```yml:test.yml
@@ -443,7 +443,7 @@ panel:
 ```yaml
 goal: 😃\n😃 // ダブルクォートなしだと、\nをエスケープしても表示が😃\n😃となる。\nが<br>に変換されない
 ```
-とりあえずダブルクォートで囲んでいる場合はちゃんと改行されているので、ちゃんと調査していませんが、解決方法があれば実装するかもしれません。
+とりあえずダブルクォートで囲んでいる場合は改行されているので、ちゃんと調査していませんが、解決方法があれば実装するかもしれません。
 
 # まとめ
 
