@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/h64m1/zenn-content#readme",
   "dependencies": {
-    "zenn-cli": "^0.1.77"
+    "zenn-cli": "^0.1.134"
   },
   "devDependencies": {
     "@textlint-ja/textlint-rule-no-synonyms": "^1.1.0",
