@@ -1,7 +1,7 @@
 {
   "filters": {},
   "rules": {
-    "textlint-rule-spellcheck-tech-word" : true,
+    "preset-ja-technical-writing": true,
     "textlint-rule-spellcheck-tech-word" : true,
     "textlint-rule-no-mix-dearu-desumasu": true,
     "textlint-rule-no-doubled-joshi": true,
