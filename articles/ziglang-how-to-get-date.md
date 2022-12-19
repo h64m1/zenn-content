@@ -2,7 +2,7 @@
 title: "Zigで日付を取得する方法"
 emoji: "📅"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [ziglang, date]
+topics: [zig, ziglang, date]
 published: true
 ---
 
